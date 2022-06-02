@@ -3,7 +3,7 @@ public class Main {
         Persona persona = new Persona();
         persona.setEdad(24);
         persona.setNombre("Joel");
-        persona.setTelefono("3418764903");
+        persona.setTelefono(341876493);
 
         System.out.println("El nombre de la persona es: " + persona.getNombre());
         System.out.println("La edad de la persona es: " + persona.getEdad());
@@ -13,7 +13,7 @@ public class Main {
 class Persona{
     private int edad;
     private String nombre;
-    private String telefono;
+    private int telefono;
 
     public void setEdad(int edad) {
         this.edad = edad;
@@ -29,10 +29,10 @@ class Persona{
         return nombre;
     }
 
-    public void setTelefono(String telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
-    public String getTelefono(){
+    public int getTelefono(){
         return telefono;
     }
 }
